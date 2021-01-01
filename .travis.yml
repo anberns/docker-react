@@ -6,4 +6,4 @@ before_install:
   - docker build -t anberns/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run anberns/docker-react npm run test -- --coverage
+  - docker run anberns/docker-react npm test
